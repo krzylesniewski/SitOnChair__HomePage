@@ -1,0 +1,168 @@
+* {
+    font-family: arial, sans-serif;
+}
+
+header {
+    background: #000;
+    width: 100vw;
+    height: 60px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.headerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+}
+
+.mainLogo {
+    color: white;
+    text-transform: uppercase;
+}
+
+strong {
+    color: #24BA9F;
+    font-weight: 900;
+}
+
+.mainMenu {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainMenu__item {
+    position: relative;
+    width: 80px;
+    height: 60px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/*
+.mainMenu__item:before {
+    position: absolute;
+    display: block;
+    content: '';
+    background: red;
+    opacity: 0;
+    left: 0;
+    top: -30px;
+    height: 70px;
+    width: inherit;
+    z-index: 5;
+}*/
+
+.mainMenu__item a:link,
+.mainMenu__item a:visited {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.subMenu {
+    position: absolute;
+    top: -35px;
+    left: -20px;
+    background: #000;
+    width: 120px;
+    padding: 10px;
+    z-index: -1;
+    transition: .5s;
+}
+
+.mainMenu__item:hover {
+    cursor: pointer;
+}
+
+.mainMenu__item:hover > .subMenu {
+    top: 75px;
+    cursor: pointer;
+}
+
+.subMenu:after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    background: #F00;
+    left: 0;
+    top: -30px;
+    opacity: 0;
+}
+
+.subMenu:before {
+    display: block;
+    content: '';
+    background: #000;
+    width: 16px;
+    height: 16px;
+    transform: rotate(45deg);
+    position: absolute;
+    z-index: -1;
+    top: -8px;
+    left: calc(50% - 16px);
+}
+
+.subMenu__item {
+    margin: 3px 0;
+}
+
+.subMenu__item a:link {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.slider {
+    height: 400px;
+    width: 100vw;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,cbcad2+100 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #cbcad2 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#cbcad2 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%,#cbcad2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cbcad2',GradientType=0 ); /* IE6-9 */
+}
+
+.sliderWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.arrow {
+    position: relative;
+    display: block;
+    background: red;
+    height: 20px;
+    width: 20px;
+}
+
+.arrow:before,
+.arrow:after {
+    display: block;
+    content: '';
+    width: 50px;
+    height: 50px;
+    color: #24BA9F;
+    position: absolute;
+    z-index: 5;
+}
+
+
+.btn {
+    display: block;
+    width: 100px;
+    height: 50px;
+    color: white;
+    background: #24BA9F;
+}
