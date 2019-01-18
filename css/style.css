@@ -10,7 +10,7 @@ header {
 }
 
 .container {
-    width: 90%;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -30,7 +30,7 @@ strong {
     color: #24BA9F;
     font-weight: 900;
 }
-
+/***************** mainMenu style *****************/
 .mainMenu {
     position: relative;
     width: 25%;
@@ -45,23 +45,17 @@ strong {
     width: 80px;
     height: 60px;
     text-align: center;
-    padding: 20px 0;
     z-index: 20;
 }
 
-/*
-.mainMenu__item:before {
-    position: absolute;
+.mainMenu__item a {
     display: block;
-    content: '';
-    background: red;
-    opacity: 0;
-    left: 0;
-    top: -30px;
-    height: 70px;
-    width: inherit;
-    z-index: 5;
-}*/
+    height: 60px;
+    padding: 20px 0;
+    position: relative;
+    z-index: 20;
+    background: black;
+}
 
 .mainMenu__item a:link,
 .mainMenu__item a:visited {
@@ -70,24 +64,24 @@ strong {
     font-weight: 700;
 }
 
+.mainMenu__item:hover {
+    cursor: pointer;
+}
+
+.mainMenu__item:hover > .subMenu {
+    top: 80px;
+    cursor: pointer;
+}
+/***************** subMenu style *****************/
 .subMenu {
     position: absolute;
-    top: -35px;
+    top: -80px;
     left: -20px;
     background: #000;
     width: 120px;
     padding: 10px;
     z-index: 10;
     transition: .5s;
-}
-
-.mainMenu__item:hover {
-    cursor: pointer;
-}
-
-.mainMenu__item:hover > .subMenu {
-    top: 75px;
-    cursor: pointer;
 }
 
 .subMenu:after {
@@ -116,7 +110,19 @@ strong {
 }
 
 .subMenu__item {
+    position: relative;
+    z-index: 10;
     margin: 3px 0;
+
+
+}
+
+.subMenu__item a {
+    position: relative;
+    z-index: 10;
+    background: black;
+    height: 30px;
+    padding: 5px 0;
 }
 
 .subMenu__item a:link {
@@ -124,16 +130,19 @@ strong {
     text-decoration: none;
     font-weight: 400;
 }
+/***************** main style *****************/
 
+
+/***************** main->slider style *****************/
 .slider {
     height: 400px;
     width: 100vw;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,cbcad2+100 */
     background: #ffffff; /* Old browsers */
     background: -moz-linear-gradient(top, #ffffff 0%, #cbcad2 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #ffffff 0%,#cbcad2 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #ffffff 0%,#cbcad2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cbcad2',GradientType=0 ); /* IE6-9 */
+    background: -webkit-linear-gradient(top, #ffffff 0%, #cbcad2 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%, #cbcad2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#cbcad2', GradientType=0); /* IE6-9 */
 }
 
 .sliderWrapper {
@@ -159,9 +168,12 @@ strong {
     height: 50px;
     color: #24BA9F;
     position: absolute;
-
 }
 
+.sliderImg {
+    width: 300px;
+    height: 300px;
+}
 
 .btn {
     display: block;
