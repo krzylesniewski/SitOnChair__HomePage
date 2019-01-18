@@ -6,6 +6,7 @@ header {
     background: #000;
     width: 100vw;
     height: 60px;
+    z-index: 2;
 }
 
 .container {
@@ -31,10 +32,12 @@ strong {
 }
 
 .mainMenu {
+    position: relative;
     width: 25%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 20;
 }
 
 .mainMenu__item {
@@ -43,6 +46,7 @@ strong {
     height: 60px;
     text-align: center;
     padding: 20px 0;
+    z-index: 20;
 }
 
 /*
@@ -73,7 +77,7 @@ strong {
     background: #000;
     width: 120px;
     padding: 10px;
-    z-index: -1;
+    z-index: 10;
     transition: .5s;
 }
 
@@ -155,7 +159,7 @@ strong {
     height: 50px;
     color: #24BA9F;
     position: absolute;
-    z-index: 5;
+
 }
 
 
