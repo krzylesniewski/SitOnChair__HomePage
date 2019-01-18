@@ -208,3 +208,41 @@ strong {
     text-decoration: none;
     text-transform: uppercase;
 }
+
+/***************  advertWrapper  ******************/
+.advertWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto 40px auto;
+}
+
+.advert {
+    position: relative;
+    width: 30%;
+}
+
+.advert img {
+    width: 100%;
+    height: auto;
+}
+
+.advert a:link,
+.advert a:visited {
+    color: black;
+    font-weight: 700;
+}
+
+.advertDescription {
+    position: absolute;
+    bottom: 20px;
+    height: 50px;
+    width: 100%;
+    opacity: 0.7;
+    background: #ccc;
+    line-height: 30px;
+}
+
+.advertDescription p {
+    width: 40%;
+    border-bottom: 10px solid #27C7AB;
+}
