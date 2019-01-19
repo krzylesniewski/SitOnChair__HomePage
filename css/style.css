@@ -27,16 +27,22 @@
     font-family: raleway, arial, sans-serif;
 }
 
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+strong {
+    color: #24BA9F;
+    font-weight: 900;
+}
+
+/***************** mainMenu style *****************/
 header {
     background: #000;
     width: 100vw;
     height: 50px;
     z-index: 2;
-}
-
-.container {
-    width: 1200px;
-    margin: 0 auto;
 }
 
 .headerWrapper {
@@ -51,13 +57,12 @@ header {
     text-transform: uppercase;
     font-weight: bold;
 }
-
-strong {
-    color: #24BA9F;
-    font-weight: 900;
+.mainLogo a:link,
+.mainLogo a:visited {
+    color: #fff;
+    text-decoration: none;
 }
 
-/***************** mainMenu style *****************/
 .mainMenu {
 
     width: 360px;
@@ -92,13 +97,8 @@ strong {
     font-weight: 700;
 }
 
-.mainMenu__item:hover {
-    cursor: pointer;
-}
-
 .mainMenu__item:hover > .subMenu {
-    top: 80px;
-    cursor: pointer;
+    top: 65px;
 }
 
 /***************** subMenu style *****************/
@@ -107,8 +107,8 @@ strong {
     top: -80px;
     left: -20px;
     background: #000;
-    width: 120px;
-    padding: 10px;
+    width: 150px;
+
     z-index: 10;
     transition: .5s;
 }
@@ -117,7 +117,7 @@ strong {
     display: block;
     content: '';
     position: absolute;
-    width: 120px;
+    width: 150px;
     height: 30px;
     background: #F00;
     left: 0;
@@ -135,15 +135,13 @@ strong {
     position: absolute;
     z-index: -1;
     top: -8px;
-    left: calc(50% - 16px);
+    left: calc(50% - 8px);
 }
 
 .subMenu__item {
     position: relative;
     z-index: 10;
     margin: 3px 0;
-
-
 }
 
 .subMenu__item a {
@@ -157,7 +155,7 @@ strong {
 .subMenu__item a:link {
     color: white;
     text-decoration: none;
-    font-weight: 400;
+
 }
 
 /***************** main style *****************/
