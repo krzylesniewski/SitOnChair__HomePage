@@ -57,11 +57,13 @@ header {
     text-transform: uppercase;
     font-weight: bold;
 }
+
 .mainLogo a:link,
 .mainLogo a:visited {
     color: #fff;
     text-decoration: none;
 }
+
 .mainLogo a:hover {
     color: #24BA9F;
 }
@@ -98,6 +100,7 @@ header {
     text-decoration: none;
     font-weight: 700;
 }
+
 .mainMenu__item a:hover {
     color: #24BA9F;
 }
@@ -194,7 +197,7 @@ header {
 
 .arrow:hover {
     cursor: pointer;
-   /* text-shadow: 0 1px 3px #24BA9F; */
+    /* text-shadow: 0 1px 3px #24BA9F; */
     text-shadow: 0 1px 3px black;
 }
 
@@ -230,7 +233,7 @@ header {
     line-height: 25px;
 }
 
-.btn {
+.btnSlider {
     display: block;
     margin: 0 auto;
     width: 250px;
@@ -254,7 +257,6 @@ header {
 
 .sliderContent a:hover {
     cursor: pointer;
-    transform: scale(1.01);
     box-shadow: 0 0 20px black;
 }
 
@@ -321,4 +323,36 @@ header {
     margin-bottom: 20px;
     line-height: 20px;
     color: #777;
+}
+
+/*****************  section with offer ********************/
+
+.offers {
+    background: #ddd;
+    width: 100%;
+    height: 800px;
+}
+
+.offersWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.offersWrapper h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    border-bottom: 10px solid #27C7AB;
+    display: block;
+    width: 300px;
+    margin-top: 30px;
+}
+
+.offersPlans {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.offersPlans__item {
+    width: 30%;
 }
