@@ -268,11 +268,11 @@ header {
 .advert {
     position: relative;
     width: 30%;
+    height: 250px;
 }
 
 .advert img {
-    width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .advert a:link,
@@ -286,12 +286,39 @@ header {
     bottom: 20px;
     height: 50px;
     width: 100%;
-    opacity: 0.7;
-    background: #ccc;
+    background: #eee;
     line-height: 30px;
 }
 
-.advertDescription p {
+.advertDescription h4 {
+    margin: 0 20px;
     width: 40%;
     border-bottom: 10px solid #27C7AB;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.advert:hover .advertDescription h4 {
+    width: 90%;
+}
+
+.advertInformation {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 25px 20px;
+}
+
+.advertInformation h4 {
+    width: 40%;
+    border-bottom: 10px solid #27C7AB;
+    font-weight: bold;
+    transition: .5s;
+    margin-bottom: 10px;
+}
+
+.advertInformation p {
+    margin-bottom: 20px;
+    line-height: 20px;
+    color: #777;
 }
