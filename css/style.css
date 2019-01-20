@@ -62,9 +62,11 @@ header {
     color: #fff;
     text-decoration: none;
 }
+.mainLogo a:hover {
+    color: #24BA9F;
+}
 
 .mainMenu {
-
     width: 360px;
     display: flex;
     justify-content: space-between;
@@ -96,6 +98,9 @@ header {
     text-decoration: none;
     font-weight: 700;
 }
+.mainMenu__item a:hover {
+    color: #24BA9F;
+}
 
 .mainMenu__item:hover > .subMenu {
     top: 65px;
@@ -108,7 +113,6 @@ header {
     left: -20px;
     background: #000;
     width: 150px;
-
     z-index: 10;
     transition: .5s;
 }
@@ -163,7 +167,7 @@ header {
 
 /***************** main->slider style *****************/
 .slider {
-    height: 400px;
+    height: 500px;
     width: 100vw;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,cbcad2+100 */
     background: #ffffff; /* Old browsers */
@@ -175,22 +179,31 @@ header {
 
 .sliderWrapper {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: flex-start;
     height: 100%;
+    position: relative;
 }
 
 .arrow {
+    position: absolute;
+    left: 12px;
+    top: 250px;
     transform: scale(5);
 }
 
+.arrow:hover {
+    cursor: pointer;
+   /* text-shadow: 0 1px 3px #24BA9F; */
+    text-shadow: 0 1px 3px black;
+}
+
 .arrow:last-child {
-    margin-left: 80px;
+    left: 1180px;
 }
 
 .sliderImg {
-    width: auto;
-    height: 300px;
+    height: 450px;
 }
 
 .sliderImg img {
@@ -200,29 +213,34 @@ header {
 
 .sliderContent {
     width: 40%;
+    height: 380px;
 }
 
 .sliderContent__title {
     display: block;
     font-size: 40px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .sliderContent p {
     display: block;
     margin: 20px 0;
     text-align: center;
+    line-height: 25px;
 }
 
 .btn {
     display: block;
     margin: 0 auto;
-    width: 200px;
+    width: 250px;
     height: 50px;
     color: white;
     background: #24BA9F;
     border-radius: 10px;
-    padding: 12px 0
+    padding: 13px 0;
+    font-weight: bold;
+    transition: .3s linear;
 }
 
 .sliderContent a:link,
@@ -232,6 +250,12 @@ header {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.sliderContent a:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    box-shadow: 0 0 20px black;
 }
 
 /***************  advertWrapper  ******************/
