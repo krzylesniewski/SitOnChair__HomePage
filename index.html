@@ -171,12 +171,19 @@
                 <label for="email"></label>
                 <input id="email" type="email" placeholder="email">
                 <label for="msg"></label>
-                <textarea name="msg" id="msg" cols="20" rows="5">Wiadmość</textarea>
+                <textarea name="msg" id="msg"
+                          cols="20" rows="5" placeholder="Wiadmość"></textarea>
             </fieldset>
             <fieldset class="contactForm__send">
-                <label for="rodo"></label>
-                <input id="rodo" type="checkbox">
-                <button type="submit">Wyślij</button>
+                <div class="contactForm__sendImg">
+                    <img src="images/red_chair.png" alt="">
+                </div>
+                <label for="rodo">
+                    Zgadzam się na przetwarzanie danych osobowych
+                    <input id="rodo" type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <button class="btnForm" type="submit">Wyślij</button>
             </fieldset>
         </form>
 
