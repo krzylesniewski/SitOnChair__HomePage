@@ -1,0 +1,164 @@
+.offers {
+    background: #eee;
+    width: 100%;
+    height: 730px;
+
+    .offersWrapper {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            font-size: 30px;
+            text-transform: uppercase;
+            border-bottom: 10px solid $mainColor;
+            display: block;
+            width: 300px;
+            margin-top: 30px;
+        }
+
+        .offersPlans {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .offersPlans__item {
+                width: 30%;
+                background: #ffffff;
+                height: 500px;
+                margin-top: 80px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                position: relative;
+                border: 2px solid $secondColor;
+
+                &:before {
+                    position: absolute;
+                    content: '';
+                    border-radius: 50%;
+                    height: 60px;
+                    width: 60px;
+                    background: #fff;
+                    top: -45px;
+                    left: calc(50% - 30px);
+                    border: 2px solid $secondColor;
+                }
+
+                &:after {
+                    position: absolute;
+                    content: '';
+                    border-radius: 50%;
+                    height: 30px;
+                    width: 30px;
+                    background: $secondColor;
+                    top: -30px;
+                    left: calc(50% - 15px);
+                }
+
+                h3 {
+                    display: block;
+                    width: 100%;
+                    color: $mainColor;
+                    text-align: center;
+                    text-transform: uppercase;
+                    margin: 20px auto;
+                    font-size: 25px;
+                    font-weight: normal;
+                }
+
+                .offersPlans__itemPrice {
+                    height: 120px;
+                    width: 120px;
+                    border-radius: 50%;
+                    background: #fff;
+                    color: $secondColor;
+                    border: 2px solid $secondColor;
+                    position: relative;
+                    margin-bottom: 40px;
+
+                    .offersPlans__itemPriceMain {
+                        position: absolute;
+                        left: calc(50% - 30px);
+                        top: 15px;
+                        font-size: 45px;
+                        font-weight: bold;
+                        line-height: 55px;
+                    }
+
+                    .offersPlans__itemPriceRest {
+                        position: absolute;
+                        right: 20px;
+                        top: 15px;
+                        line-height: 20px;
+                    }
+
+                    .offersPlans__itemPriceDisc {
+                        position: absolute;
+                        bottom: 25px;
+                        left: 20px;
+                        font-weight: bold;
+                    }
+                }
+
+                &:last-of-type .offersPlans__itemPriceMain {
+                    left: 15px;
+                }
+
+                .offersPlans__itemFeature {
+                    width: 100%;
+                    height: 45px;
+                    background: #eee;
+                    font-size: 25px;
+                    padding: 5px;
+                    text-align: center;
+                    color: #777;
+
+                    &:nth-of-type(2n) {
+                        background: #ddd;
+                    }
+                }
+
+                .btnOffers {
+                    position: absolute;
+                    bottom: 15px;
+                    width: 125px;
+                    height: 35px;
+                    text-transform: uppercase;
+                    background: $mainColor;
+                    border: none;
+                    color: #fff;
+                    border-radius: 10px;
+                }
+            }
+
+            .offersPlans__itemPrice--active {
+                border: 2px solid $mainColor;
+                background: $mainColor;
+
+                h3 {
+                    color: #fff;
+                }
+
+                .btnOffers {
+                    background: #fff;
+                    color: $mainColor;
+                }
+
+                &:before {
+                    border: 2px solid $mainColor;
+                    background: $mainColor;
+                }
+
+                &:after {
+                    background: #fff;
+                }
+
+                .offersPlans__itemPrice {
+                    color: $mainColor;
+                }
+            }
+
+        }
+    }
+}

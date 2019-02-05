@@ -1,0 +1,57 @@
+.subMenu {
+    position: absolute;
+    top: -80px;
+    left: -20px;
+    background: #000;
+    width: 150px;
+    z-index: 10;
+    transition: .5s;
+
+    &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 150px;
+        height: 30px;
+        background: #F00;
+        left: 0;
+        top: -30px;
+        opacity: 0;
+    }
+
+    &:before {
+        display: block;
+        content: '';
+        background: #000;
+        width: 16px;
+        height: 16px;
+        transform: rotate(45deg);
+        position: absolute;
+        z-index: -1;
+        top: -8px;
+        left: calc(50% - 8px);
+    }
+
+    .subMenu__item {
+        position: relative;
+        z-index: 10;
+        margin: 3px 0;
+
+        a {
+            position: relative;
+            z-index: 10;
+            background: black;
+            height: 30px;
+            padding: 5px 0;
+
+            &:link {
+                color: white;
+                text-decoration: none;
+            }
+
+            &:hover {
+                color: $mainColor
+            }
+        }
+    }
+}
